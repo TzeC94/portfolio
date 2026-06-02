@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="MirrorUnityFPS project image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09111a"/>
+      <stop offset="45%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#1f140d"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="25%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#4fd6ff" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#4fd6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="78%" cy="70%" r="52%">
+      <stop offset="0%" stop-color="#f1a251" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#f1a251" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect width="1600" height="900" fill="url(#glowA)"/>
+  <rect width="1600" height="900" fill="url(#glowB)"/>
+
+  <g opacity=".7">
+    <path d="M170 230 C350 120, 510 160, 650 280 S980 470, 1180 330 S1390 190, 1480 280" fill="none" stroke="#4fd6ff" stroke-opacity=".8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M140 620 C320 540, 520 650, 680 560 S1020 420, 1220 570 S1410 700, 1500 610" fill="none" stroke="#f1a251" stroke-opacity=".7" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="300" cy="200" r="16" fill="#4fd6ff"/>
+    <circle cx="530" cy="238" r="14" fill="#4fd6ff"/>
+    <circle cx="760" cy="350" r="17" fill="#4fd6ff"/>
+    <circle cx="1080" cy="382" r="14" fill="#4fd6ff"/>
+    <circle cx="1285" cy="290" r="16" fill="#4fd6ff"/>
+
+    <circle cx="260" cy="595" r="16" fill="#f1a251"/>
+    <circle cx="510" cy="612" r="14" fill="#f1a251"/>
+    <circle cx="770" cy="520" r="17" fill="#f1a251"/>
+    <circle cx="1080" cy="503" r="14" fill="#f1a251"/>
+    <circle cx="1320" cy="614" r="16" fill="#f1a251"/>
+  </g>
+
+  <g opacity=".14">
+    <rect x="118" y="160" width="1380" height="580" rx="36" fill="none" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <text x="120" y="730" fill="#f4eadf" font-family="Inter, Arial, sans-serif" font-size="112" font-weight="900">MirrorUnityFPS</text>
+  <text x="126" y="796" fill="#9fc9d5" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="5">UNITY · MIRROR NETWORKING · FPS TEMPLATE</text>
+</svg>
