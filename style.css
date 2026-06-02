@@ -493,53 +493,6 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
   font-size:clamp(1.05rem,1.7vw,1.32rem);
   line-height:1.58;
 }
-.focus-widget{
-  align-self:center;
-  border:1px solid rgba(241,162,81,.28);
-  border-radius:22px;
-  padding:1.25rem;
-  background:
-    radial-gradient(circle at 100% 0, rgba(216,109,47,.2), transparent 13rem),
-    linear-gradient(160deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
-  box-shadow:var(--shadow);
-}
-.widget-top{
-  display:flex;
-  align-items:center;
-  gap:.55rem;
-  margin-bottom:.95rem;
-}
-.widget-top p{
-  margin:0;
-  color:var(--accent-2);
-  text-transform:uppercase;
-  letter-spacing:.16em;
-  font-size:.68rem;
-  font-weight:900;
-}
-.focus-widget h2{
-  font-size:clamp(1.5rem,2.2vw,2.15rem);
-  letter-spacing:-.04em;
-}
-.focus-widget p{
-  color:var(--muted);
-  margin:.85rem 0 0;
-  font-size:.95rem;
-}
-.widget-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.45rem;
-  margin-top:1rem;
-}
-.widget-tags span{
-  border:1px solid rgba(241,162,81,.25);
-  background:rgba(216,109,47,.08);
-  color:#f6d1b6;
-  border-radius:999px;
-  padding:.35rem .55rem;
-  font-size:.78rem;
-}
 @media (max-width:1120px){
   .hero-role{
     white-space:normal;
@@ -551,9 +504,6 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
   .hero-v2{
     grid-template-columns:1fr;
     min-height:auto;
-  }
-  .focus-widget{
-    width:100%;
   }
   .portfolio-intro h1{
     font-size:clamp(2.55rem,12vw,4.3rem);
@@ -585,7 +535,7 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
 }
 
 
-/* Hero V4: keep summary clean, pin current-focus widget to top-right */
+/* Hero V4: keep summary clean */
 .hero-v2{
   position:relative;
   display:block;
@@ -607,35 +557,7 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
 .hero-v2 .portfolio-intro .summary-line{
   max-width:880px;
 }
-.hero-v2 .focus-widget{
-  position:absolute;
-  top:78px;
-  right:0;
-  width:300px;
-  max-width:300px;
-  padding:1rem;
-  z-index:2;
-}
-.hero-v2 .focus-widget h2{
-  font-size:1.45rem;
-}
-.hero-v2 .focus-widget p{
-  font-size:.86rem;
-  line-height:1.55;
-}
-.hero-v2 .widget-tags span{
-  font-size:.72rem;
-  padding:.28rem .48rem;
-}
 @media (max-width:1180px){
-  .hero-v2 .focus-widget{
-    position:relative;
-    top:auto;
-    right:auto;
-    width:100%;
-    max-width:none;
-    margin-top:2rem;
-  }
 }
 @media (max-width:900px){
   .hero-v2 .portfolio-intro h1{
@@ -646,7 +568,7 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
 
 
 /* Hero V5: no-overlap layout
-   Top row: role text + current-focus widget
+   Top row: role text
    Second row: portfolio summary across the full width */
 .hero-v2{
   display:grid !important;
@@ -667,16 +589,6 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
   margin:0;
   max-width:100%;
   white-space:normal;
-}
-.hero-v2 .focus-widget{
-  grid-column:2 / 3;
-  grid-row:1;
-  position:static !important;
-  align-self:start;
-  width:300px;
-  max-width:300px;
-  padding:.95rem;
-  z-index:1;
 }
 .hero-v2 .portfolio-intro{
   grid-column:1 / -1;
@@ -706,16 +618,10 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
     grid-template-columns:1fr !important;
   }
   .hero-v2 .hero-role,
-  .hero-v2 .focus-widget,
   .hero-v2 .portfolio-intro,
   .hero-v2 .hero-actions,
   .hero-v2 .quick-stats{
     grid-column:1 / -1;
-  }
-  .hero-v2 .focus-widget{
-    grid-row:2;
-    width:100%;
-    max-width:none;
   }
   .hero-v2 .portfolio-intro{
     grid-row:3;
@@ -733,7 +639,7 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
 }
 
 
-/* Hero V6: floating current-focus widget, no reserved hero gap */
+/* Hero V6: no reserved hero gap */
 .hero-v2{
   display:block !important;
   min-height:calc(100vh - 83px);
@@ -768,36 +674,9 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
 .hero-v2 .quick-stats{
   margin-top:2.6rem;
 }
-.floating-focus{
-  position:fixed !important;
-  top:96px;
-  right:clamp(18px,4vw,46px);
-  width:280px !important;
-  max-width:280px !important;
-  padding:.95rem !important;
-  z-index:9;
-  backdrop-filter:blur(18px);
-}
-.floating-focus h2{
-  font-size:1.35rem !important;
-}
-.floating-focus p{
-  font-size:.84rem !important;
-  line-height:1.55 !important;
-}
-.floating-focus .widget-tags span{
-  font-size:.7rem !important;
-  padding:.26rem .45rem !important;
-}
 @media (max-width:1180px){
   .hero-v2 .hero-role{
     max-width:none;
-  }
-  .floating-focus{
-    position:static !important;
-    width:min(100% - 32px, 760px) !important;
-    max-width:760px !important;
-    margin:20px auto 0;
   }
 }
 @media (max-width:900px){
@@ -811,30 +690,6 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
 }
 
 
-/* Make the floating current-focus widget behave like a clickable project shortcut */
-a.floating-focus{
-  color:inherit;
-  text-decoration:none;
-  cursor:pointer;
-  transition:transform .22s ease, border-color .22s ease, background .22s ease;
-}
-a.floating-focus:hover,
-a.floating-focus:focus{
-  transform:translateY(-3px);
-  border-color:rgba(241,162,81,.55);
-  background:
-    radial-gradient(circle at 100% 0, rgba(216,109,47,.28), transparent 13rem),
-    linear-gradient(160deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
-}
-a.floating-focus:after{
-  content:"View project →";
-  display:inline-block;
-  margin-top:.85rem;
-  color:var(--accent-2);
-  font-size:.76rem;
-  font-weight:900;
-  letter-spacing:.04em;
-}
 
 
 
