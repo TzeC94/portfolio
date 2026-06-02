@@ -1480,3 +1480,44 @@ a.floating-focus:after{
     grid-template-columns:1fr;
   }
 }
+
+
+/* V32: stacked achievement highlights */
+.achievement-stack{
+  display:grid;
+  gap:1rem;
+  margin-top:2rem;
+  max-width:1180px;
+}
+.achievement-stack .achievement-card{
+  margin-top:0;
+}
+.achievement-logo.text-logo{
+  display:grid;
+  place-items:center;
+}
+.achievement-logo.text-logo span{
+  color:var(--accent-2);
+  font-weight:950;
+  letter-spacing:.12em;
+  font-size:1rem;
+}
+
+
+/* V33: achievements as a standalone section */
+.achievement-section{
+  padding-top:72px;
+}
+.achievement-section .achievement-stack{
+  margin:2.5rem auto 0;
+}
+@media (min-width:900px){
+  .achievement-section .achievement-stack{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+  .achievement-section .achievement-card{
+    grid-template-columns:1fr;
+    align-content:start;
+    height:100%;
+  }
+}
