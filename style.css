@@ -254,7 +254,7 @@ code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.95rem}
   color:var(--muted);
   border-top:1px solid var(--line);
 }
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease}
+.reveal{opacity:1;transform:none;transition:opacity .7s ease, transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
 @media (max-width:900px){
   .nav-toggle{display:block}
